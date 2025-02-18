@@ -1,18 +1,22 @@
 #User function Template for python3
+
 class Solution:
-    def revStr (self, s : str) -> str :
-        return s[::-1]
+     def reverseString(self, s: str) -> str:
+         return s[::-1]
 
 
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
-if __name__ == '__main__': 
-    t = int (input ())
-    for _ in range (t):
+
+if __name__ == "__main__":
+    t = int(input())
+    while (t > 0):
         s = input()
-        
         ob = Solution()
-        print(ob.revStr(s))
+        print(ob.reverseString(s))
+        t = t - 1
+
         print("~")
+
 # } Driver Code Ends
